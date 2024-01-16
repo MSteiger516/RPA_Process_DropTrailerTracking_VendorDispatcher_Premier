@@ -1,0 +1,16 @@
+{
+    "ResourcesFolderPath": "Resources",
+    "PublicResourcesPath": "Resources/Public",
+    "LogPrefix": "FRAMEWORK: ",
+    "UserLogsFolder": "{0}\\UiPath\\Logs",
+    "CleanLogsOlderThan": "7",
+    "ProcessName": "Framework_CHANGEME",
+    "OrchestratorQueueName": "Framework_CHANGEME",
+    "OrchestratorBucketName": "Framework_CHANGEME",
+    "MaxSetupRetries": "3",
+    "MaxGetTransactionRetries": "3",
+    "MaxExceptionCount": "0",
+    "ProcessKill": "chrome, EXCEL",
+    "ExceptionScreenshotsPath": "ExceptionScreenshots",
+    "ExceptionScreenshotsDrivePath": "\\\\tql.com\\shares\\IT\\RPA\\ExceptionScreenshots\\"
+}

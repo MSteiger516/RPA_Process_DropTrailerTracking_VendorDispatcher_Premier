@@ -1,0 +1,26 @@
+name: $(Date:yyyy).$(Date:MMdd).$(Build.BuildId)
+
+resources:
+  repositories:
+  - repository: ci
+    type: git
+    name: TQL.ADO.Pipelines
+    trigger: none
+  - repository: impower
+    type: github
+    name: impower-ai/uipath-ado-templates
+    endpoint: Github
+    trigger: none
+    ref: refs/tags/preview-v39
+
+trigger:
+- main
+
+pool: 'RPA Test'
+
+stages:
+- template: tql-template.yaml@ci
+  parameters:
+    has_tests: false
+    target_resource_name: self
+    orchestrator_folder: 'Shared'
